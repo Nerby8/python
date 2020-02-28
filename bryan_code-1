@@ -1,0 +1,13 @@
+import os
+
+def fonction(nom,text):
+        os.chdir("C:/Users/33651/Desktop/")
+        fichier = open(nom, "a")
+        fichier.write(text)
+        fichier.close()
+
+nom = input("nom du fichier:")
+texte = input("Que veut tu écrire?")
+
+if __name__ == "__main__":
+        fonction(nom, texte)
